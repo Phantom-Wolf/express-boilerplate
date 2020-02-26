@@ -32,7 +32,7 @@ app.use(function errorHandler(error, req, res, next) {
 		console.log(error);
 		response = { message: error.message, error };
 	}
-	res.status(500).jsonb(response);
+	res.status(500).json(response);
 });
 
 module.exports = app;
